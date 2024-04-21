@@ -24,7 +24,7 @@ location = [19.2294561, 72.8479905]
 
 @st.cache_data
 def load_data(pincode):
-    df = pd.read_csv("mumbai_df_geocoded")
+    df = pd.read_csv("../Data/mumbai_df_geocoded")
     df = df[df["formatted_addresss"].str.contains(str(pincode))]
     return df
 
